@@ -1,0 +1,189 @@
+/* Screen CSS */
+
+/* Minified Eric Meyer reset CSS; see css/_reset.css */
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,main,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable*/
+
+/*
+  End reset CSS.
+
+  Write custom styles in the appropriate sections below (BASE, LAYOUT, MODULAR, and
+  STATE), whose labels are derived from the book Scalable and Modular Architecture for CSS
+  (SMACSS) by Jonathan Snook. See https://smacss.com/
+*/
+
+/* ===== BASE STYLES ============ */
+/* Primarily element selectors for content: headings, paragraphs, lists, and media */
+
+/* Optimal Typographic Rendering */
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  line-height: 1.222em;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+h1,h2,p,ul  {
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-bottom: 1.222em;
+}
+
+h1  {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+h2  {
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 1.222em;
+}
+
+ul  {
+  list-style-type: square;
+  padding-left: 4em;
+}
+
+#footer  {
+  padding-top: 1.222em;
+  background:
+}
+
+
+/* Responsive Media */
+
+.responsive  {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Typical bold and italic styles */
+b,
+strong {
+  font-weight: bold;
+}
+i,
+em,
+cite {
+  font-style: italic;
+}
+
+/* ===== LAYOUT STYLES ========== */
+/* Primarily ID selectors for positioning sectioning elements */
+
+
+
+
+/* ===== MODULAR STYLES ========= */
+/* Primarily class selectors for styling unique page components  */
+#header {
+  background: white;
+  display: grid;
+  justify-content: center;
+}
+
+#content {
+  background: white;
+  padding-top: 1.222em;
+}
+
+#home {
+  background: #025cab;
+}
+
+#about, #why, #student, #interests  {
+  background: #e0dcdc;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+#footer {
+  background: white;
+}
+
+/* ===== STATE STYLES =========== */
+/*
+  Media queries. Also class selectors from JavaScript, including feature detection.
+  JavaScript-dependent styles can be prefixed with the .hasjs class added in by the
+  `js/site.js` file.
+*/
+@media screen and ( min-width: 500px) {
+  .responsive {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 500px)  {
+  #home {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  #content  {
+    display: grid;
+    grid-column: 1fr;
+  }
+}
+
+@media screen and (min-width: 501px)  {
+  #home {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+}
+
+@media screen and (min-width: 750px)  {
+  #home {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+
+  #content  {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1000px)  {
+  #home {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+}
+
+@media screen and (min-width: 1250px)  {
+  #home {
+    padding-left: 12em;
+    padding-right: 12em;
+  }
+}
+
+@media screen and (min-width: 1500px)  {
+  #home {
+    padding-left: 14em;
+    padding-right: 14em;
+  }
+}
+
+@media screen and (min-width: 1750px)  {
+  #home {
+    padding-left: 16em;
+    padding-right: 16em;
+  }
+}
+
+@media screen and (min-width: 2000px)  {
+  #home {
+    padding-left: 20em;
+    padding-right: 20em;
+  }
+}
