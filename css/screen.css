@@ -37,7 +37,7 @@ h1,h2,p,ul  {
 h1  {
   font-size: 2em;
   text-align: center;
-  padding-top: 0.5em;
+  padding-top: 1em;
 }
 
 h2  {
@@ -72,14 +72,12 @@ li a {
  text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
  background-color: #111;
 }
 
 #footer  {
   padding-top: 1.222em;
-  background:
 }
 
 
