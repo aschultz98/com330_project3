@@ -90,6 +90,12 @@ li a:hover {
   height: auto;
 }
 
+.studentresponsive  {
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* Typical bold and italic styles */
 b,
@@ -145,6 +151,8 @@ cite {
   .responsive {
     width: 350px;
   }
+
+
 }
 
 @media screen and (max-width: 500px)  {
