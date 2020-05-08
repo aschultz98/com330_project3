@@ -88,7 +88,7 @@ li a:hover {
   height: auto;
 }
 
-.studentresponsive  {
+.newresponsive  {
   justify-content: center;
   max-width: 100%;
   height: auto;
@@ -129,7 +129,7 @@ cite {
   background: #025cab;
 }
 
-#about, #why, #student, #interests  {
+#about, #why, #student, #interests, #highschool, #notredame, #college, #iit, #sports, #cubs, #exercise, #weights, #gaming, #league  {
   background: #e0dcdc;
   margin-left: 0.5em;
   margin-right: 0.5em;
